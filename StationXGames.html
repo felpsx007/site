@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StationXGames</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    :root {
+      --red: #d32f2f;
+      --blue: #1976d2;
+      --yellow: #fdd835;
+      --green: #388e3c;
+      --bg: linear-gradient(135deg, var(--red) 0%, var(--blue) 25%, var(--yellow) 50%, var(--green) 75%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Courier New', Courier, monospace;
+      color: #ffffff;
+      background: var(--bg);
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px;
+      backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.35);
+      border: 4px solid rgba(255, 255, 255, 0.18);
+      border-radius: 18px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+      font-size: clamp(2.75rem, 5vw, 5rem);
+      letter-spacing: 0.35rem;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 0 0 12px rgba(255,255,255,0.35);
+    }
+
+    header p {
+      font-size: 1.05rem;
+      margin: 18px auto 0;
+      max-width: 760px;
+      line-height: 1.75;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      border-bottom: 2px dashed rgba(255,255,255,0.65);
+      padding-bottom: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), 0 12px 24px rgba(0, 0, 0, 0.28);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      color: #ffeb3b;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .card p {
+      margin: 0.65rem 0 0;
+      line-height: 1.7;
+    }
+
+    .highlight {
+      color: #4dd0e1;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 22px;
+      }
+
+      header p {
+        font-size: 0.98rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>StationXGames</h1>
+      <p>Bem-vindo à estação dos jogos: notícias atuais, clássicos retrô e um visual inspirado em pixels para quem vive o universo gamer.</p>
+    </header>
+
+    <section class="section">
+      <h2>Jogos atuais</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/PlayStation_5_console_%28cropped%29.png" alt="Console PlayStation 5">
+          <h3>PlayStation 5</h3>
+          <p>Console moderno com gráficos de última geração e suporte a jogos em 4K. Ideal para quem busca performance e exclusivos de ação.</p>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Xbox_Series_X_%28side%29.png" alt="Console Xbox Series X">
+          <h3>Xbox Series X</h3>
+          <p>Console potente com foco em velocidade e retrocompatibilidade. Excelente opção para jogar títulos atuais e clássicos.</p>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Nintendo_Switch_with_Joy-Con.png" alt="Console Nintendo Switch">
+          <h3>Nintendo Switch</h3>
+          <p>Console híbrido com jogos exclusivos e mobilidade. Perfeito para jogar em casa ou na estrada com amigos.</p>
+        </article>
+        <article class="card">
+          <h3>GTA 6 Pré-venda</h3>
+          <p>A pré-venda de <span class="highlight">GTA 6</span> já está atraindo fãs com edições especiais, bônus de conteúdo e acesso antecipado em plataformas compatíveis.</p>
+        </article>
+        <article class="card">
+          <h3>Cyber Legends</h3>
+          <p>Um RPG de ação com exploração futurista e combate rápido. Ideal para quem curte <span class="highlight">mundo aberto</span> e narrativa imersiva.</p>
+        </article>
+        <article class="card">
+          <h3>Rift Racers</h3>
+          <p>Corridas arcade com pistas neon e drift intenso. Perfeito para partidas rápidas e altas pontuações.</p>
+        </article>
+        <article class="card">
+          <h3>Astro Front</h3>
+          <p>Um shooter espacial com campanha cooperativa e arenas competitivas. Visual estilizado e jogabilidade moderna.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Jogos retrô</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Nintendo_Entertainment_System_-_Nintendo.jpeg" alt="Console Nintendo NES">
+          <h3> Nintendo NES</h3>
+          <p>O clássico console de 8 bits que marcou a era dos jogos domésticos. Cheio de aventuras e plataformas memoráveis.</p>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Sega_Genesis_%28model_1%29.jpg" alt="Console Sega Genesis">
+          <h3>Sega Genesis</h3>
+          <p>Console de 16 bits com jogabilidade rápida e biblioteca arcade. Um ícone dos anos 90 para fãs de futebol e ação.</p>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Super_Nintendo_Entertainment_System.png" alt="Console Super Nintendo">
+          <h3>Super Nintendo</h3>
+          <p>Console retro com clássicos de plataforma e RPG. Um símbolo da era 16 bits e dos jogos que definiram o gênero.</p>
+        </article>
+        <article class="card">
+          <h3>Pixel Quest</h3>
+          <p>Plataforma clássica com chefes memoráveis e gráficos em estilo 8 bits. Um tributo aos jogos que moldaram gerações.</p>
+        </article>
+        <article class="card">
+          <h3>Arcade Galaxy</h3>
+          <p>Inimigos em padrões desafiadores, power-ups e trilha sonora nostálgica. Ideal para quem ama <span class="highlight">jogos de arcade</span>.</p>
+        </article>
+        <article class="card">
+          <h3>Retro Runner</h3>
+          <p>Corrida infinita com estética neon e controles simples. Excelente para treinar reflexos e competir por recordes.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      Página criada para estudantes de informática com estilo gamer, clássico e atual. Divirta-se e explore novos jogos!</footer>
+  </div>
+</body>
+</html>
